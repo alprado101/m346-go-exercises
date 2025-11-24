@@ -25,6 +25,13 @@ func main() {
 
 	// TODO: Loop over suits and ranks to output all combinations.
 
-	// TODO: delete this line afterwards
-	fmt.Println(suits, ranks)
+	for _, rank := range ranks {
+
+		for _, suit := range suits {
+
+			fmt.Printf("%c%c\t", suit, rank)
+		}
+
+		fmt.Println()
+	}
 }
